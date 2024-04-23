@@ -104,6 +104,9 @@ You will need the latest version of npm.
    ```sh
    npm install
    ```
+4. Install the latest Python on your local machine. 
+5. Create a Python env variable to use with Python packages. This project uses
+   ```pipenv```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,10 +122,7 @@ You will need the latest version of npm.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [] Feature A TBH 
 
 See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
 

@@ -1,14 +1,5 @@
 
 <a name="readme-top"></a>
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -65,7 +56,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![contributors-shield](https://img.shields.io/github/contributors/keelworks/LMS.svg?style=for-the-badge)
+![forks-shield](https://img.shields.io/github/forks/keelworks/LMS.svg?style=for-the-badge)
+![stars-shield](https://img.shields.io/github/stars/keelworks/LMS.svg?style=for-the-badge)
+![issues-shield](https://img.shields.io/github/issues/keelworks/LMS.svg?style=for-the-badge)
+![license-shield](https://img.shields.io/github/license/keelworks/LMS.svg?style=for-the-badge)
+
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

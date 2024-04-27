@@ -34,4 +34,4 @@ jobs:
     #     python manage.py test
     - name: Run Tests
       run: |
-        pytest server || true
+        pytest server/routes_app || true

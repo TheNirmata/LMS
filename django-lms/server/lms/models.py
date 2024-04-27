@@ -1,6 +1,6 @@
 from django.db import models
 
-# descrives three props of the lms model
+# descrives three props of the WebAppModel
 class Lms(models.Model):
   title = models.models.CharField(max_length=120)
   description = models.TextField()

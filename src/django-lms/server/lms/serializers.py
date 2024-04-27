@@ -2,10 +2,12 @@
 # recieved data 
 
 from rest_framework import serializers
-from .models import Lms
+from .models import WebAppModal
 
-class LmsSerializer(serializers.ModelSerializer):
+class WebAppSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Lms
-        fields = ('id', 'title', 'description', 'completed')
+        model = WebAppModal
+        # fields = ('id', 'title', 'description', 'completed')
+        # fi
+        fields = '__all__'
         

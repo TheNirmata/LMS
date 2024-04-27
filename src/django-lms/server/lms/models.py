@@ -1,6 +1,6 @@
 from django.db import models
 
-class Lms(models.Model):
+class WebAppModal(models.Model):
     title = models.CharField(max_length=120)
     description = models.TextField()
     completed = models.BooleanField(default=False)

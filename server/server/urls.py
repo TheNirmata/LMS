@@ -16,8 +16,13 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path
 
 urlpatterns = [
+    path('', include('routes_app.urls')),
     path("admin/", admin.site.urls),
+    path('profile/', include('routes_app.urls')),
+    path('keelworks/profile/instructor', include('routes_app.urls')),
+    path('keelworks/profile/student', include('routes_app.urls')),
+    path('keelworks/profile/admin', include('routes_app.urls')),
 ]

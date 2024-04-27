@@ -155,9 +155,14 @@ Project Link: [https://github.com/keelworks/LMS.git](https://github.com/keelwork
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+### UI/UX Team: 
+  Sabrina Settle, Mathews Varghese, Dan Hammond, Mridula Joshi, Birundha Murugesan, Athar Abolela
+### Cloud Team: 
+  Ian Cahoon
+### Project Manager: 
+  Junis Benjamin
+### Product Managers: 
+  Tiffany Bennett, Sabrina Settle
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

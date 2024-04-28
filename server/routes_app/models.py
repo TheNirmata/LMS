@@ -1,6 +1,8 @@
+from venv import create
 from django.db import models
 from django.contrib.auth.models import User
-
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 
 # Create your models here.
 class Profile(models.Model):
@@ -12,12 +14,28 @@ class Profile(models.Model):
     # profile_picture = models.ImageField(upload_to='profile_pictures/', blank=True)
     role = models.ForeignKey(User, on_delete=models.CASCADE, related_name='roles')
 
-    def __str__(self):
-        return self.Profile
-#Test user
-# user = User.objects.create_user('monkeyluffy@test.com', 'Test_123')
-# user.first_name = 'Monkey'
-# user.last_name = 'Luffy'
-# user.role = 'student'
-# user.save()
-      
+@receiver(post_save, sender=User)
+def create_user_profile(sender, instance, created, **kwargs):
+    if created:
+        Profile.objects.create(role=instance)
+
+
+from routes_app.models import Profile, User
+#dummy data
+email='monkeyluffy@onepiece.com'
+
+#test for if user exist in the database 
+if User.objects.filter(email=email).exists():
+        user = User.objects.get(email=email)
+        
+        #create new profile instance
+        profile = Profile.objects.create(
+            first_name = 'Monkey',
+            last_name = 'Luffy',
+            bio = 'I am the future king of the pirates',
+            location = 'East Blue',
+            birth_date = '1999-05-05',
+            role = user
+        )
+else:
+    print(f'User not found with email: {email}' )

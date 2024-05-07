@@ -40,5 +40,5 @@ next-env.d.ts
 # Ignore all .env files in the root of a project
 # but search for .env files in subdirectories
 !.env*
-```
-__pycache__/
+
+**/__pycache__/*

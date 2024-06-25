@@ -20,9 +20,11 @@ export default function Input(
     <div className="flex flex-col w-[32.875rem] mb-[1.875rem]">
       <label className="font-bold" htmlFor={id}>
         <span className="inline-block me-[3px] mb-2">{label}</span>
-        <span className="inline-block align-top">
-          {required && <AsteriskIcon />}
-        </span>
+        {required && (
+          <span className="inline-block align-top">
+            <AsteriskIcon />
+          </span>
+        )}
       </label>
       <div className="relative">
         <input

@@ -1,7 +1,6 @@
 import HeadingPrimary from '../../_components/Typography/HeadingPrimary';
 import HeadingTertiary from '../../_components/Typography/HeadingTertiary';
 import Checkbox from '../../_components/UI/Checkbox';
-import ImagePicker from '../../_components/UI/ImagePicker';
 import Input from '../../_components/UI/Input';
 import Label from '../../_components/UI/Label';
 

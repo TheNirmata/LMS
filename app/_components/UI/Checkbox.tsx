@@ -1,5 +1,5 @@
 'use client';
-import { KeyboardEventHandler, MouseEventHandler, useState } from 'react';
+import { KeyboardEventHandler, useState } from 'react';
 
 export default function Checkbox(
   props: Readonly<{

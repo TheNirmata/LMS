@@ -1,6 +1,5 @@
 'use client';
 import { ChangeEventHandler, useRef, useState } from 'react';
-import AsteriskIcon from '../../../public/icons/asterisk.svg';
 import CloseIcon from '../../../public/icons/close.svg';
 import Label from './Label';
 

@@ -2,6 +2,7 @@
 import { ChangeEventHandler, useRef, useState } from 'react';
 import AsteriskIcon from '../../../public/icons/asterisk.svg';
 import CloseIcon from '../../../public/icons/close.svg';
+import Label from './Label';
 
 function ResetButton(
   props: Readonly<{
@@ -31,11 +32,17 @@ export default function Input(
     placeholder?: string;
     required?: boolean;
     error?: string;
+    containerClassname?: string;
   }>
 ) {
-  const { id, name, label, placeholder, required, error } = props;
+  const { id, name, label, placeholder, required, error, containerClassname } = props;
   const inputRef = useRef<HTMLInputElement>(null);
   const [value, setValue] = useState('');
+  let containerStyle = "flex flex-col w-[32.875rem] mb-[1.875rem]";
+
+  if(containerClassname) {
+    containerStyle += ' ' + containerClassname;
+  }
 
   const changeHandler: ChangeEventHandler<HTMLInputElement> = (event) => {
     setValue(event.target.value);
@@ -47,15 +54,8 @@ export default function Input(
   };
 
   return (
-    <div className="flex flex-col w-[32.875rem] mb-[1.875rem]">
-      <label className="font-bold" htmlFor={id}>
-        <span className="inline-block me-[3px] mb-2">{label}</span>
-        {required && (
-          <span className="inline-block align-top">
-            <AsteriskIcon />
-          </span>
-        )}
-      </label>
+    <div className={containerStyle}>
+      <Label id={id} required={required}>{label}</Label>
       <div className="relative">
         <input
           id={id}

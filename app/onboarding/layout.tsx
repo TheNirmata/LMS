@@ -4,10 +4,8 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="pt-[.875rem] px-[7.125rem]">
-      <main className="ms-[12.875rem] me-[6.375rem]">
-        {children}
-      </main>
-    </div>
+    <main className="mt-[.875rem] ms-[13.75rem] me-auto">
+      {children}
+    </main>
   );
 }

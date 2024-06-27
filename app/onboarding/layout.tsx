@@ -4,7 +4,7 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <main className="mt-[.875rem] ms-[13.75rem] me-auto">
+    <main className="mt-[.875rem] mx-[13.75rem]">
       {children}
     </main>
   );

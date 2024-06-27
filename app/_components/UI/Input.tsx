@@ -37,7 +37,7 @@ export default function Input(
 ) {
   const { id, name, label, placeholder, required, error, containerClassname } = props;
   const inputRef = useRef<HTMLInputElement>(null);
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState<string>('');
   let containerStyle = "flex flex-col w-[32.875rem] mb-[1.875rem]";
 
   if(containerClassname) {

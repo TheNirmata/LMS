@@ -19,7 +19,7 @@ export default function Page() {
         <div className="w-[30.125rem]">
           <ImagePicker />
         </div>
-        <div className="w-[32.9375rem]">
+        <div className="w-[29.1875rem]">
           <form>
             <Input
               id="username"
@@ -28,7 +28,7 @@ export default function Page() {
               placeholder="Please list your Username"
               required={true}
               error="Please list your Username"
-              containerClassname="w-[32.9375rem]"
+              containerClassname="w-[29.1875rem]"
             />
             <Input
               id="highest-education-level"

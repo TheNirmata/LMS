@@ -1,7 +1,7 @@
 import HeadingPrimary from '../../../src/components/typography/heading-primary';
 import HeadingTertiary from '../../../src/components/typography/heading-tertiary';
 import { Checkbox } from '@/components/ui/checkbox';
-import Input from '../../_components/UI/Input';
+import { InputExtended } from '@/components/ui/input';
 import { Label, InputLabel } from '@/components/ui/label';
 
 type CheckboxGroup = {
@@ -116,12 +116,12 @@ function CheckboxGroup(props: Readonly<CheckboxGroup>) {
         </div>
       ))}
       {other && (
-        <Input
+        <InputExtended
           id={name + '-other'}
           name={name + '-other'}
           label="Other"
           placeholder="Type your answer here"
-          containerClassname="!w-[30.625rem] !mb-[3.0625rem]"
+          containerClassName="!w-[30.625rem] !mb-[3.0625rem]"
         />
       )}
     </div>

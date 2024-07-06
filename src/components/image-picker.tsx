@@ -1,6 +1,6 @@
-import Label from './Label';
-import ProfilePicturePlaceholderIcon from '../../../public/icons/profile-picture-placeholder.svg';
-import UploadIcon from '../../../public/icons/upload.svg';
+import Label from '../../app/_components/UI/Label';
+import ProfilePicturePlaceholderIcon from '../../public/icons/profile-picture-placeholder.svg';
+import UploadIcon from '../../public/icons/upload.svg';
 
 export default function ImagePicker(props: Readonly<{}>) {
   return (

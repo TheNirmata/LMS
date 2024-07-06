@@ -1,6 +1,6 @@
-import HeadingPrimary from '../../_components/Typography/HeadingPrimary';
-import HeadingTertiary from '../../_components/Typography/HeadingTertiary';
-import ImagePicker from '../../_components/UI/ImagePicker';
+import HeadingPrimary from '../../../src/components/typography/heading-primary';
+import HeadingTertiary from '../../../src/components/typography/heading-tertiary';
+import ImagePicker from '../../../src/components/image-picker';
 import Input from '../../_components/UI/Input';
 
 export default function Page() {

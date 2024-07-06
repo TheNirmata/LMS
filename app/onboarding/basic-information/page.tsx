@@ -1,5 +1,5 @@
-import HeadingPrimary from '../../_components/Typography/HeadingPrimary';
-import HeadingTertiary from '../../_components/Typography/HeadingTertiary';
+import HeadingPrimary from '../../../src/components/typography/heading-primary';
+import HeadingTertiary from '../../../src/components/typography/heading-tertiary';
 import Input from '../../_components/UI/Input';
 
 export default function Page() {

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import HeadingPrimary from '../../../src/components/typography/heading-primary';
 import HeadingTertiary from '../../../src/components/typography/heading-tertiary';
-import Label from '../../_components/UI/Label';
+import { InputLabel } from '@/components/ui/label';
 import PencilIcon from '../../../public/icons/pencil.svg';
 import PencilSolidIcon from '../../../public/icons/pencil-solid.svg';
 
@@ -54,19 +54,19 @@ export default function Page() {
             <div className="flex-auto pt-[1.125rem]">
               <div className="grid grid-cols-[min-content_auto] grid-rows-3 gap-x-[1.4375rem] gap-y-16">
                 <div>
-                  <Label classname="text-xl leading-[1.875rem] whitespace-nowrap" required={true}>First Name</Label>
+                  <InputLabel className="text-xl leading-[1.875rem] whitespace-nowrap mb-0" required={true}>First Name</InputLabel>
                 </div>
                 <div>
                   <span className="font-bold text-xl leading-[1.875rem]">Terry</span>
                 </div>
                 <div>
-                  <Label classname="text-xl leading-[1.875rem] whitespace-nowrap" required={true}>Last Name</Label>
+                  <InputLabel className="text-xl leading-[1.875rem] whitespace-nowrap mb-0" required={true}>Last Name</InputLabel>
                 </div>
                 <div>
                   <span className="font-bold text-xl leading-[1.875rem]">Smith</span>
                 </div>
                 <div>
-                  <Label classname="text-xl leading-[1.875rem] whitespace-nowrap" required={true}>Age</Label>
+                  <InputLabel className="text-xl leading-[1.875rem] whitespace-nowrap mb-0" required={true}>Age</InputLabel>
                 </div>
                 <div>
                   <span className="font-bold text-xl leading-[1.875rem]">25</span>
@@ -80,13 +80,13 @@ export default function Page() {
             <div className="flex-auto pt-[1.125rem] ms-[12.625rem]">
               <div className="grid grid-cols-[min-content_auto] grid-rows-3 gap-x-[1.4375rem] gap-y-16">
                 <div>
-                  <Label classname="text-xl leading-[1.875rem] whitespace-nowrap" required={true}>Education Level</Label>
+                  <InputLabel className="text-xl leading-[1.875rem] whitespace-nowrap mb-0" required={true}>Education Level</InputLabel>
                 </div>
                 <div>
                   <span className="font-bold text-xl leading-[1.875rem]">Beginner</span>
                 </div>
                 <div>
-                  <Label classname="text-xl leading-[1.875rem] whitespace-nowrap" required={true}>Motivation</Label>
+                  <InputLabel className="text-xl leading-[1.875rem] whitespace-nowrap mb-0" required={true}>Motivation</InputLabel>
                 </div>
                 <div>
                   <div className="flex gap-x-6 font-bold text-xl leading-[1.875rem]">
@@ -95,7 +95,7 @@ export default function Page() {
                   </div>
                 </div>
                 <div>
-                  <Label classname="text-xl leading-[1.875rem] whitespace-nowrap" required={true}>Areas of Interest</Label>
+                  <InputLabel className="text-xl leading-[1.875rem] whitespace-nowrap mb-0" required={true}>Areas of Interest</InputLabel>
                 </div>
                 <div>
                   <div className="flex gap-x-6 font-bold text-xl leading-[1.875rem]">
@@ -112,13 +112,13 @@ export default function Page() {
             <div className="flex-auto pt-[1.125rem] ms-[12.625rem]">
               <div className="grid grid-cols-[min-content_auto] grid-rows-3 gap-x-[1.4375rem] gap-y-16">
                 <div>
-                  <Label classname="text-xl leading-[1.875rem] whitespace-nowrap" required={true}>Motivation</Label>
+                  <InputLabel className="text-xl leading-[1.875rem] whitespace-nowrap mb-0" required={true}>Motivation</InputLabel>
                 </div>
                 <div>
                   <span className="font-bold text-xl leading-[1.875rem]">Beginner</span>
                 </div>
                 <div>
-                  <Label classname="text-xl leading-[1.875rem] whitespace-nowrap" required={true}>Job Interests</Label>
+                  <InputLabel className="text-xl leading-[1.875rem] whitespace-nowrap mb-0" required={true}>Job Interests</InputLabel>
                 </div>
                 <div>
                   <div className="flex gap-x-6 font-bold text-xl leading-[1.875rem]">
@@ -127,7 +127,7 @@ export default function Page() {
                   </div>
                 </div>
                 <div>
-                  <Label classname="text-xl leading-[1.875rem] whitespace-nowrap" required={true}>Areas of Interest</Label>
+                  <InputLabel className="text-xl leading-[1.875rem] whitespace-nowrap mb-0" required={true}>Areas of Interest</InputLabel>
                 </div>
                 <div>
                   <div className="flex gap-x-6 font-bold text-xl leading-[1.875rem]">

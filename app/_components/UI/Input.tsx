@@ -1,7 +1,7 @@
 'use client';
 import { ChangeEventHandler, useRef, useState } from 'react';
 import CloseIcon from '../../../public/icons/close.svg';
-import Label from './Label';
+import { InputLabel } from '@/components/ui/label';
 
 function ResetButton(
   props: Readonly<{
@@ -54,7 +54,7 @@ export default function Input(
 
   return (
     <div className={containerStyle}>
-      <Label id={id} required={required}>{label}</Label>
+      <InputLabel htmlFor={id} required={required}>{label}</InputLabel>
       <div className="relative">
         <input
           id={id}

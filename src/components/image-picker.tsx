@@ -1,11 +1,11 @@
-import Label from './Label';
-import ProfilePicturePlaceholderIcon from '../../../public/icons/profile-picture-placeholder.svg';
-import UploadIcon from '../../../public/icons/upload.svg';
+import { InputLabel } from '@/components/ui/label';
+import ProfilePicturePlaceholderIcon from '../../public/icons/profile-picture-placeholder.svg';
+import UploadIcon from '../../public/icons/upload.svg';
 
 export default function ImagePicker(props: Readonly<{}>) {
   return (
     <div className="w-full">
-      <Label>Profile Picture</Label>
+      <InputLabel className="block" required={true}>Profile Picture</InputLabel>
       <div className="flex flex-col justify-center py-[3.125rem] items-center w-full bg-image-picker-bg rounded-2xl">
         <div className="relative mb-[2.375rem]">
           <ProfilePicturePlaceholderIcon />

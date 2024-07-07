@@ -1,7 +1,7 @@
-import HeadingPrimary from '../../_components/Typography/HeadingPrimary';
-import HeadingTertiary from '../../_components/Typography/HeadingTertiary';
-import ImagePicker from '../../_components/UI/ImagePicker';
-import Input from '../../_components/UI/Input';
+import HeadingPrimary from '../../../src/components/typography/heading-primary';
+import HeadingTertiary from '../../../src/components/typography/heading-tertiary';
+import ImagePicker from '../../../src/components/image-picker';
+import { InputExtended } from '@/components/ui/input';
 
 export default function Page() {
   return (
@@ -21,32 +21,32 @@ export default function Page() {
         </div>
         <div className="w-[29.1875rem]">
           <form>
-            <Input
+            <InputExtended
               id="username"
               name="username"
               label="Username"
               placeholder="Please list your Username"
               required={true}
               error="Please list your Username"
-              containerClassname="w-[29.1875rem]"
+              containerClassName="w-[29.1875rem]"
             />
-            <Input
+            <InputExtended
               id="highest-education-level"
               name="highest-education-level"
               label="Highest Education Level"
               placeholder="Please list your Highest Education Level"
               required={true}
               error="Please list your Highest Education Level"
-              containerClassname="!w-[24.125rem]"
+              containerClassName="!w-[24.125rem]"
             />
-            <Input
+            <InputExtended
               id="timezone"
               name="timezone"
               label="Select your timezone"
               placeholder="Please list your timezone"
               required={true}
               error="Please list your timezone"
-              containerClassname="!w-[24.125rem]"
+              containerClassName="!w-[24.125rem]"
             />
           </form>
         </div>

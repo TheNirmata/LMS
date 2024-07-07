@@ -1,6 +1,6 @@
-import HeadingPrimary from '../../_components/Typography/HeadingPrimary';
-import HeadingTertiary from '../../_components/Typography/HeadingTertiary';
-import Input from '../../_components/UI/Input';
+import HeadingPrimary from '../../../src/components/typography/heading-primary';
+import HeadingTertiary from '../../../src/components/typography/heading-tertiary';
+import { InputExtended } from '@/components/ui/input';
 
 export default function Page() {
   return (
@@ -15,7 +15,7 @@ export default function Page() {
         </HeadingTertiary>
       </div>
       <form>
-        <Input
+        <InputExtended
           id="first-name"
           name="first-name"
           label="First Name"
@@ -23,7 +23,7 @@ export default function Page() {
           required={true}
           error="Please list your First Name"
         />
-        <Input
+        <InputExtended
           id="last-name"
           name="last-name"
           label="Last Name"
@@ -31,7 +31,7 @@ export default function Page() {
           required={true}
           error="Please list your Last Name"
         />
-        <Input
+        <InputExtended
           id="age"
           name="age"
           label="Age"

@@ -1,8 +1,8 @@
-import HeadingPrimary from '../../_components/Typography/HeadingPrimary';
-import HeadingTertiary from '../../_components/Typography/HeadingTertiary';
-import Checkbox from '../../_components/UI/Checkbox';
-import Input from '../../_components/UI/Input';
-import Label from '../../_components/UI/Label';
+import HeadingPrimary from '../../../src/components/typography/heading-primary';
+import HeadingTertiary from '../../../src/components/typography/heading-tertiary';
+import { Checkbox } from '@/components/ui/checkbox';
+import { InputExtended } from '@/components/ui/input';
+import { Label, InputLabel } from '@/components/ui/label';
 
 type CheckboxGroup = {
   name: string;
@@ -97,20 +97,31 @@ function CheckboxGroup(props: Readonly<CheckboxGroup>) {
 
   return (
     <div>
-      <Label classname="text-2xl leading-9 mb-[.625rem]" required={true}>
+      <InputLabel className="text-2xl leading-9 mb-[.625rem]" required={true}>
         {title}
-      </Label>
+      </InputLabel>
       <p className="mb-4">{description}</p>
-      {checkboxes.map((checkboxProps) => (
-        <Checkbox key={checkboxProps.id} name={name} {...checkboxProps} />
+      {checkboxes.map(({ id, label, value }) => (
+        <div className="flex items-center mb-[1.6875rem]" key={id}>
+          <Checkbox
+            name={name}
+            id={id}
+            value={value}
+            className="w-[1.8125rem] h-[1.8125rem] me-[.8125rem] border-[3px] border-black rounded-[4px]"
+            aria-labelledby={'label-' + id}
+          />
+          <Label htmlFor={id} id={'label-' + id} className="text-base">
+            {label}
+          </Label>
+        </div>
       ))}
       {other && (
-        <Input
+        <InputExtended
           id={name + '-other'}
           name={name + '-other'}
           label="Other"
           placeholder="Type your answer here"
-          containerClassname="!w-[30.625rem] !mb-[3.0625rem]"
+          containerClassName="!w-[30.625rem] !mb-[3.0625rem]"
         />
       )}
     </div>
